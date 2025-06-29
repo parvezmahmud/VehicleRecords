@@ -1,0 +1,14 @@
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/bin/Debug/net8.0/VehicleRecords
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/bin/Debug/net8.0/VehicleRecords.deps.json
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/bin/Debug/net8.0/VehicleRecords.runtimeconfig.json
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/bin/Debug/net8.0/VehicleRecords.dll
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/bin/Debug/net8.0/VehicleRecords.pdb
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.GeneratedMSBuildEditorConfig.editorconfig
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.AssemblyInfoInputs.cache
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.AssemblyInfo.cs
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.csproj.CoreCompileInputs.cache
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.dll
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/refint/VehicleRecords.dll
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.pdb
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.genruntimeconfig.cache
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/ref/VehicleRecords.dll
