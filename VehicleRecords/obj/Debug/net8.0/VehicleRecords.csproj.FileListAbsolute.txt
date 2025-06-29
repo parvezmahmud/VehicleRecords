@@ -12,3 +12,7 @@
 /home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.pdb
 /home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.genruntimeconfig.cache
 /home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/ref/VehicleRecords.dll
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.sourcelink.json
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleRecords.csproj.AssemblyReference.cache
+/home/pm/Dotnet/VehicleRecords/VehicleRecords/obj/Debug/net8.0/VehicleR.E4888D9B.Up2Date

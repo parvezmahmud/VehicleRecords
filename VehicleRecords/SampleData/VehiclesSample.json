@@ -1,0 +1,72 @@
+[
+  {
+    "VehicleId": 1,
+    "VehicleModel": "Toyota Corolla",
+    "VehicleDate": "2021-03-12",
+    "RegistrationNumber": "DH-2345",
+    "Owner": "Md. Imran Hossain"
+  },
+  {
+    "VehicleId": 2,
+    "VehicleModel": "Honda Civic",
+    "VehicleDate": "2020-11-08",
+    "RegistrationNumber": "CT-9876",
+    "Owner": "Sarah Rahman"
+  },
+  {
+    "VehicleId": 3,
+    "VehicleModel": "Ford Ranger",
+    "VehicleDate": "2022-06-17",
+    "RegistrationNumber": "BG-4421",
+    "Owner": "Nurul Amin"
+  },
+  {
+    "VehicleId": 4,
+    "VehicleModel": "Nissan X-Trail",
+    "VehicleDate": "2019-09-23",
+    "RegistrationNumber": "KH-1123",
+    "Owner": "Farzana Karim"
+  },
+  {
+    "VehicleId": 5,
+    "VehicleModel": "BMW X5",
+    "VehicleDate": "2023-02-04",
+    "RegistrationNumber": "RB-7789",
+    "Owner": "Shahidul Islam"
+  },
+  {
+    "VehicleId": 6,
+    "VehicleModel": "Tesla Model 3",
+    "VehicleDate": "2021-12-30",
+    "RegistrationNumber": "EL-3301",
+    "Owner": "Tania Akter"
+  },
+  {
+    "VehicleId": 7,
+    "VehicleModel": "Hyundai Tucson",
+    "VehicleDate": "2020-07-19",
+    "RegistrationNumber": "MA-4522",
+    "Owner": "Rashed Chowdhury"
+  },
+  {
+    "VehicleId": 8,
+    "VehicleModel": "Kia Sportage",
+    "VehicleDate": "2018-04-11",
+    "RegistrationNumber": "JS-9081",
+    "Owner": "Selina Yasmin"
+  },
+  {
+    "VehicleId": 9,
+    "VehicleModel": "Toyota Prius",
+    "VehicleDate": "2019-01-26",
+    "RegistrationNumber": "BD-2233",
+    "Owner": "Abdul Kader"
+  },
+  {
+    "VehicleId": 10,
+    "VehicleModel": "Mitsubishi Pajero",
+    "VehicleDate": "2022-08-14",
+    "RegistrationNumber": "CU-6610",
+    "Owner": "Nazmul Hasan"
+  }
+]

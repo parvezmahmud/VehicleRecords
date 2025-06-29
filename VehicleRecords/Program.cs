@@ -6,12 +6,13 @@ class Program
 {
     static void Main(string[] args)
     {
+        SampleData.AddSampleData.AddVehiclesSampleData();
         Display();
     }
 
     static void Display()
     {
-        Console.WriteLine("1. Show all vehicles\n2.Add Vehicle\n3.Update Vehicle\n4.Delete Vehicle");
+        Console.WriteLine("1. Show all vehicles\n2.Add Vehicle\n3.Update Vehicle\n4.Delete Vehicle\nEnter 0 to exit");
         int choice = int.Parse(Console.ReadLine());
         ManageVehicles(choice);
         
@@ -24,7 +25,8 @@ class Program
         switch (choice)
         {
             case 0:
-                Console.WriteLine("Wrong");
+                Console.WriteLine("Exiting program...");
+                System.Environment.Exit(0);
                 break;
             case 1:
                 try
@@ -34,7 +36,7 @@ class Program
                     foreach (var vehicle in allVehicles)
                     {
                         Console.WriteLine(
-                            $"Model: {vehicle.VehicleModel}, Date: {vehicle.VehicleDate}, Registration Number: {vehicle.RegistrationNumber}, Owner: {vehicle.Owner}");
+                            $"ID: {vehicle.VehicleId}\nModel: {vehicle.VehicleModel}, Date: {vehicle.VehicleDate}, Registration Number: {vehicle.RegistrationNumber}, Owner: {vehicle.Owner}");
                     }
                 }
                 catch (Exception ex)
@@ -77,25 +79,64 @@ class Program
             case 3:
                 try
                 {
+                    string newModel;
+                    string newRegistrationNumber;
+                    string newVehicleDate;
+                    string newOwner;
                     Console.WriteLine("Enter vehicle ID");
                     int vehicleID = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Leave empty if you don't to change the field");
                     var item = repo.IndividualVehicle(vehicleID);
-                    Console.WriteLine($"Old Model: {item.VehicleModel}");
-                    Console.Write("New Model: ");
-                    string newModel = Console.ReadLine();
-                    Console.WriteLine($"Old Registration Number: {item.RegistrationNumber}");
-                    Console.Write("New Registration Date: ");
-                    string newRegistrationNumber = Console.ReadLine();
-                    Console.WriteLine($"Old Registration Date: {item.VehicleDate}");
-                    Console.Write("New Registration Date: ");
-                    string newVehicleDate = Console.ReadLine();
+                    try
+                    {
+                        Console.WriteLine($"Old Model: {item.VehicleModel}");
+                        Console.Write("New Model: ");
+                         newModel= Console.ReadLine();
+                    }
+                    catch (Exception ex)
+                    {
+                        newModel = item.VehicleModel;
+                    }
+
+                    try
+                    {
+                        Console.WriteLine($"Old Registration Number: {item.RegistrationNumber}");
+                        Console.Write("New Registration Date: ");
+                        newRegistrationNumber = Console.ReadLine();
+                    }
+                    catch (Exception ex)
+                    {
+                        newRegistrationNumber = item.RegistrationNumber;
+                    }
+
+                    try
+                    {
+                        Console.WriteLine($"Old Registration Date: {item.VehicleDate}");
+                        Console.Write("New Registration Date: ");
+                        newVehicleDate = Console.ReadLine();
+                    }
+                    catch (Exception ex)
+                    {
+                        newVehicleDate = item.VehicleDate;
+                    }
+
+                    try
+                    {
+                        Console.WriteLine($"Old owner: {item.Owner}");
+                        Console.Write("New owner: ");
+                        newOwner = Console.ReadLine();
+                    }
+                    catch (Exception ex)
+                    {
+                        newOwner = item.Owner;
+                    }
                     Vehicles updateVehicle = new Vehicles
                     {
                         VehicleId = item.VehicleId,
                         VehicleModel = newModel,
                         RegistrationNumber = newRegistrationNumber,
                         VehicleDate = newVehicleDate,
-                        Owner = item.Owner,
+                        Owner = newOwner
                         
                     };
                     repo.UpdateVehicle(updateVehicle);
