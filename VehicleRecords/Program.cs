@@ -79,57 +79,30 @@ class Program
             case 3:
                 try
                 {
-                    string newModel;
-                    string newRegistrationNumber;
-                    string newVehicleDate;
-                    string newOwner;
                     Console.WriteLine("Enter vehicle ID");
                     int vehicleID = int.Parse(Console.ReadLine());
                     Console.WriteLine("Leave empty if you don't to change the field");
                     var item = repo.IndividualVehicle(vehicleID);
-                    try
-                    {
-                        Console.WriteLine($"Old Model: {item.VehicleModel}");
-                        Console.Write("New Model: ");
-                         newModel= Console.ReadLine();
-                    }
-                    catch (Exception ex)
-                    {
-                        newModel = item.VehicleModel;
-                    }
+                    Console.WriteLine($"Old Model: {item.VehicleModel}");
+                    Console.Write("New Model: ");
+                    string newModelInput = Console.ReadLine();
+                    string newModel = string.IsNullOrWhiteSpace(newModelInput) ? item.VehicleModel : newModelInput;
 
-                    try
-                    {
-                        Console.WriteLine($"Old Registration Number: {item.RegistrationNumber}");
-                        Console.Write("New Registration Date: ");
-                        newRegistrationNumber = Console.ReadLine();
-                    }
-                    catch (Exception ex)
-                    {
-                        newRegistrationNumber = item.RegistrationNumber;
-                    }
+                    Console.WriteLine($"Old Registration Number: {item.RegistrationNumber}");
+                    Console.Write("New Registration Number: ");
+                    string newRegInput = Console.ReadLine();
+                    string newRegistrationNumber = string.IsNullOrWhiteSpace(newRegInput) ? item.RegistrationNumber : newRegInput;
 
-                    try
-                    {
-                        Console.WriteLine($"Old Registration Date: {item.VehicleDate}");
-                        Console.Write("New Registration Date: ");
-                        newVehicleDate = Console.ReadLine();
-                    }
-                    catch (Exception ex)
-                    {
-                        newVehicleDate = item.VehicleDate;
-                    }
+                    Console.WriteLine($"Old Registration Date: {item.VehicleDate}");
+                    Console.Write("New Registration Date: ");
+                    string newDateInput = Console.ReadLine();
+                    string newVehicleDate = string.IsNullOrWhiteSpace(newDateInput) ? item.VehicleDate : newDateInput;
 
-                    try
-                    {
-                        Console.WriteLine($"Old owner: {item.Owner}");
-                        Console.Write("New owner: ");
-                        newOwner = Console.ReadLine();
-                    }
-                    catch (Exception ex)
-                    {
-                        newOwner = item.Owner;
-                    }
+                    Console.WriteLine($"Old Owner: {item.Owner}");
+                    Console.Write("New Owner: ");
+                    string newOwnerInput = Console.ReadLine();
+                    string newOwner = string.IsNullOrWhiteSpace(newOwnerInput) ? item.Owner : newOwnerInput;
+
                     Vehicles updateVehicle = new Vehicles
                     {
                         VehicleId = item.VehicleId,
@@ -140,6 +113,7 @@ class Program
                         
                     };
                     repo.UpdateVehicle(updateVehicle);
+                    Console.WriteLine("Vehicle updated!!");
                 }
                 catch (Exception ex)
                 {
